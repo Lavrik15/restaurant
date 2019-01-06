@@ -1,0 +1,127 @@
+.banner {
+    position: relative;
+    padding-top: 285px;
+    overflow: hidden;
+}
+.banner__image {
+    width: 100%;
+    position: relative;
+}
+.banner__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.banner__inner {
+    position: relative;
+    background-color: $color-red;
+}
+.banner__schedule,
+.banner__about {
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+}
+.banner__title {
+    color: #fff;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 70px;
+}
+.banner__schedule {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.banner__title-wrapper {
+    display: flex;
+}
+.banner__arrow {
+    align-self: center;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.banner__schedule-title {
+    margin-bottom: 5px;
+    font-size: 13px;
+    color: $color-pale;
+}
+.banner__schedule-content {
+    font-size: 15px;
+    color: $color-white;
+}
+.banner__schedule-group {
+    display: flex;
+    flex-direction: column;
+}
+.banner__schedule-inner {
+    display: flex;
+    justify-content: space-between;
+}
+.banner__about {
+    display: none;
+    background-color: #313131;
+}
+.banner__about-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+@media (min-width: 1024px) {
+    .banner {
+        height: 540px;
+        padding-top: 0;
+    }
+    .banner__about {
+        width: 100%;
+        max-width: 337px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+    }
+    .banner__arrow {
+        display: none;
+    }
+    .banner__schedule {
+        display: flex;
+        padding-right: 30px;
+        padding-left: 20px;
+    }
+    .banner__content {
+        display: flex;
+        float: right;
+        width: 100%;
+        max-width: 1240px;
+    }
+    .banner__inner {
+        position: absolute;
+        // right: 195px;
+        bottom: 0px;
+        left: 0;
+    }
+    .banner__image {
+        object-fit: cover;
+        height: 580px;
+    }
+    .banner__title-wrapper {
+        margin-right: 30px;
+    }
+    .banner__schedule-group {
+        margin-right: 55px;
+    }
+    .banner__schedule-group:last-child {
+        margin-right: 0;
+    }
+    .banner__schedule-inner {
+        align-items: center;
+    }
+    .banner__schedule-title {
+        font-size: 14px;
+    }
+    .banner__schedule-content {
+        font-size: 18px;
+    }
+
+}

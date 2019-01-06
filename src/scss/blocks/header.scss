@@ -1,0 +1,9 @@
+.header {
+    min-height: 96px;
+    transition: filter $animate-time;
+}
+@media (min-width: 1024px) {
+    .header {
+        min-height: auto;
+    }
+}

@@ -1,0 +1,50 @@
+.controller {
+    display: none;
+}
+@media (min-width: 1024px) {
+    .controller button {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        padding: 0;
+        font-size: 20px;
+        font-weight: 700;
+        border: none;
+        background: none;
+    }
+    .controller__value {
+        display: flex;
+        align-items: center;
+        color: $color-red-dark;
+        font-weight: 700;
+        margin: 0 5px;
+    }
+    .controller__decriment::after {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        content: "";
+        width: 10px;
+        height: 2px;
+        background-color: #333;
+    }
+    .controller__incriment::after {
+        position: absolute;
+        content: "";
+        left: 50%;
+        transform: translate(-50%);
+        width: 10px;
+        height: 2px;
+        background-color: $color-red;
+    }
+    .controller__incriment::before {
+        position: absolute;
+        content: "";
+        left: 50%;
+        top: 52%;
+        transform: translate(-50%, -50%) rotate(90deg);
+        width: 10px;
+        height: 2px;
+        background-color: $color-red;
+    }
+}

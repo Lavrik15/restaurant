@@ -1,0 +1,21 @@
+.backdoor {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    transition: all $animate-time;
+}
+.backdoor.active {
+    display: block;
+    z-index: 5;
+    transition: background $animate-time;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.backdoor--blur {
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 11;
+}

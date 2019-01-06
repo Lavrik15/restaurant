@@ -1,0 +1,19 @@
+@import "./normalize.scss";
+@import "./mixins.scss";
+@import "./var.scss";
+@import "./base.scss";
+@import "./svg.scss";
+@import "./animate.scss";
+@import "./blocks/backdoor.scss";
+@import "./blocks/header.scss";
+@import "./blocks/nav.scss";
+@import "./blocks/banner.scss";
+@import "./blocks/filter.scss"; // фильтр по категориям
+@import "./blocks/catalog.scss";
+@import "./blocks/order.scss"; // боковая панель
+@import "./blocks/filter-btn.scss";
+@import "./blocks/popup.scss";
+@import "./blocks/main.scss";
+@import "./vmSwipe.scss"; //плагин для бокового скрола мышкой
+@import "./blocks/select.scss";
+@import "./blocks/controller.scss"; // кнопки добавления/удаления товара

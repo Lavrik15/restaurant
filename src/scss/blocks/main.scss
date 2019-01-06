@@ -1,0 +1,10 @@
+@media (min-width: 1024px) {
+    .main {
+        display: flex;
+        transition: filter $animate-time;
+    }
+    .main__content {
+        flex: 1;
+        border-right: 1px solid $color-delimetr-gray;
+    } 
+}

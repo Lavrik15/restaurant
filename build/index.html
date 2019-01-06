@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <button class="nav__menu-btn" type="button"></button>
+            <a class="nav__logo-mobile" href="#">
+                <svg class="svg svg__logo">
+                    <use xlink:href=" ./images/sprite/sprite.svg#icon-logo"></use>
+                </svg>
+            </a>
+            <div class="nav__wrapper">
+                <div class="nav__shadow hidden">
+                    <div class="nav__inner">
+                        <ul class="nav__list nav__group-1">
+                            <li class="nav__item"><a class="nav__item-link" href="#">Рестораны</a></li>
+                            <li class="nav__item"><a class="nav__item-link" href="#">Доставка</a></li>
+                            <li class="nav__item"><a class="nav__item-link" href="#">Караоке</a></li>
+                        </ul>
+                        <a class="nav__logo-desktop" href="#">
+                            <svg class="svg svg__logo">
+                                <use xlink:href="./images/sprite/sprite.svg#icon-logo"></use>
+                            </svg>
+                        </a>
+                        <ul class="nav__list nav__group-2">
+                            <li class="nav__item"><a class="nav__item-link" href="#">О нас</a></li>
+                            <li class="nav__item"><a class="nav__item-link" href="#">Новости</a></li>
+                            <li class="nav__item"><a class="nav__item-link" href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="nav__login">
+                <a class="nav__login-link" href="">
+                    <svg class="svg svg__login">
+                        <use xlink:href="./images/sprite/sprite.svg#icon-login"></use>
+                    </svg>
+                </a>
+                <span class="nav__login-name">Константин</span>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <article class="main__content">
+            <section class="banner">
+                <picture class="banner__image-wrapper">
+                    <source class="banner__image" srcset="./images/banner-desktop.jpg" media="(min-width: 1024px)">
+                    <img class="banner__image" src="./images/banner-mobile.jpg" alt="">
+                </picture>
+                <div class="banner__inner">
+                    <div class="container">
+                        <div class="banner__content">
+                            <div class="banner__schedule">
+                                <div class="banner__title-wrapper">
+                                    <h1 class="banner__title">Ресторан</h1>
+                                    <svg class="svg svg__arrow banner__arrow">
+                                        <use xlink:href="./images/sprite/sprite.svg#icon-arrow"></use>
+                                    </svg>
+                                </div>
+                                <div class="banner__schedule-inner">
+                                    <div class="banner__schedule-group">
+                                        <span class="banner__schedule-title">Кухня</span>
+                                        <span class="banner__schedule-content">Восточная</span>
+                                    </div>
+                                    <div class="banner__schedule-group">
+                                        <span class="banner__schedule-title">Кухня</span>
+                                        <span class="banner__schedule-content">От&nbsp;1000&nbsp;₽</span>
+                                    </div>
+                                    <div class="banner__schedule-group">
+                                        <span class="banner__schedule-title">Доставка</span>
+                                        <div class="banner__schedule-content">c&nbsp; <time datetime="11:00">11:00</time> до&nbsp;<time datetime="02:00">02:00</time></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="banner__about">
+                                <a class="banner__about-link" href="#">о ресторане</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <nav class="filter">
+                <div class="filter__wrapper">
+                    <div class="swipe filter__shadow hidden">
+                        <div class="swipe-block filter__inner">
+                            <ul class="vm-swipe filter__list">
+                                <li class="filter__item filter__item--active">
+                                    <a draggable="false" class="filter__item-link" href="" data-scroll="pop">Популярные<sup class="filter__item-sup">12</sup></a>
+                                </li>
+                                <li class="filter__item">
+                                    <a draggable="false" class="filter__item-link" href="" data-scroll="hot">Горячее<sup class="filter__item-sup">74</sup></a>
+                                </li>
+                                <li class="filter__item">
+                                    <a draggable="false" class="filter__item-link" href="" data-scroll="sidedish">Гарниры<sup class="filter__item-sup">16</sup></a>
+                                </li>
+                                <li class="filter__item">
+                                    <a draggable="false" class="filter__item-link" href="" data-scroll="bake">Выпечка<sup class="filter__item-sup">31</sup></a>
+                                </li>
+                                <li class="filter__item">
+                                    <a draggable="false" class="filter__item-link" href="" data-scroll="grill">Гриль<sup class="filter__item-sup">8</sup></a>
+                                </li>
+                                <li class="filter__item">
+                                    <a draggable="false" class="filter__item-link" href="" data-scroll="childish">Детское<sup class="filter__item-sup">12</sup></a>
+                                </li>
+                                <li class="filter__item">
+                                    <a draggable="false" class="filter__item-link" href="" data-scroll="snaсk">Закуски<sup class="filter__item-sup">12</sup></a>
+                                </li>
+                                <li class="filter__item">
+                                    <a draggable="false" class="filter__item-link" href="" data-scroll="soup">Супы<sup class="filter__item-sup">12</sup></a>
+                                </li>
+                                <li class="filter__item">
+                                    <a draggable="false" class="filter__item-link" href="" data-scroll="soup">Супы<sup class="filter__item-sup">12</sup></a>
+                                </li>
+                                <li class="filter__item">
+                                    <a draggable="false" class="filter__item-link" href="" data-scroll="soup">Супы<sup class="filter__item-sup">12</sup></a>
+                                </li>
+                                <li class="filter__item">
+                                    <a draggable="false" class="filter__item-link" href="" data-scroll="soup">Супы<sup class="filter__item-sup">12</sup></a>
+                                </li>
+                                <li class="filter__item">
+                                    <a draggable="false" class="filter__item-link" href="" data-scroll="soup">Супы<sup class="filter__item-sup">12</sup></a>
+                                </li>
+                                <li class="filter__item">
+                                    <a draggable="false" class="filter__item-link" href="" data-scroll="soup">Супы<sup class="filter__item-sup">12</sup></a>
+                                </li>
+                                <li class="filter__item">
+                                    <a draggable="false" class="filter__item-link" href="" data-scroll="soup">Супы<sup class="filter__item-sup">12</sup></a>
+                                </li>
+                                <li class="filter__item">
+                                    <a draggable="false" class="filter__item-link" href="" data-scroll="soup">Супы<sup class="filter__item-sup">12</sup></a>
+                                </li>
+                                <li class="filter__item">
+                                    <a draggable="false" class="filter__item-link" href="" data-scroll="soup">Супы<sup class="filter__item-sup">12</sup></a>
+                                </li>
+                                <li class="filter__item">
+                                    <a draggable="false" class="filter__item-link" href="" data-scroll="soup">Супы<sup class="filter__item-sup">12</sup></a>
+                                </li>
+                                <li class="filter__item">
+                                    <a draggable="false" class="filter__item-link" href="" data-scroll="soup">Супы<sup class="filter__item-sup">12</sup></a>
+                                </li>
+                                <li class="filter__item">
+                                    <a draggable="false" class="filter__item-link" href="" data-scroll="soup">Супы<sup class="filter__item-sup">12</sup></a>
+                                </li>
+                                <li class="filter__item">
+                                    <a draggable="false" class="filter__item-link" href="" data-scroll="soup">Супы<sup class="filter__item-sup">12</sup></a>
+                                </li>
+                                <li class="filter__item">
+                                    <a draggable="false" class="filter__item-link" href="" data-scroll="soup">Супы<sup class="filter__item-sup">12</sup></a>
+                                </li>
+                                <li class="filter__item">
+                                    <a draggable="false" class="filter__item-link" href="" data-scroll="soup">Супы<sup class="filter__item-sup">12</sup></a>
+                                </li>
+                                <li class="filter__item">
+                                    <a draggable="false" class="filter__item-link" href="" data-scroll="soup">Супы<sup class="filter__item-sup">12</sup></a>
+                                </li>
+                                <li class="filter__item">
+                                    <a draggable="false" class="filter__item-link" href="" data-scroll="soup">Супы<sup class="filter__item-sup">12</sup></a>
+                                </li>
+                                <li class="filter__item">
+                                    <a draggable="false" class="filter__item-link" href="" data-scroll="soup">Супы<sup class="filter__item-sup">12</sup></a>
+                                </li>
+                                <li class="filter__item">
+                                    <a draggable="false" class="filter__item-link" href="" data-scroll="soup">Супы<sup class="filter__item-sup">12</sup></a>
+                                </li>
+                                <li class="filter__item">
+                                    <a draggable="false" class="filter__item-link" href="" data-scroll="soup">Супы<sup class="filter__item-sup">12</sup></a>
+                                </li>
+                                <li class="filter__item">
+                                    <a draggable="false" class="filter__item-link" href="" data-scroll="soup">Супы<sup class="filter__item-sup">12</sup></a>
+                                </li>
+                                <li class="filter__item">
+                                    <a draggable="false" class="filter__item-link" href="" data-scroll="soup">Супы<sup class="filter__item-sup">12</sup></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <section class="catalog">
+                <div class="catalog__heading">
+                    <h2 class="catalog__title pop">Полулярные</h2>
+                    <select class="select" name="sort">
+                        <option value="">По цене</option>
+                        <option value="">По алфавиту</option>
+                        <option value="">По углеводам</option>
+                        <option value="">По белкам</option>
+                    </select>
+                </div>
+                <div class="catalog__inner">
+                    <div class="catalog__item">
+                        <div class="catalog__item-inner">
+                            <div class="catalog__controller controller">
+                                <button class="controller__decriment"></button>
+                                <span class="controller__value">2</span>
+                                <button class="controller__incriment"></button>
+                            </div>
+                            <img class="catalog__image" src="./images/plov.jpg" alt="">
+                            <div class="catalog__item-heading">
+                                <h3 class="catalog__item-name">Плов Чайханский <span class="catalog__item-weight">250 г</span></h3>
+                                <span class="catalog__item-price">246 &#8381;</span>
+                            </div>
+                        </div>
+                        <div class="catalog__item-discribe">
+                            <p>Камчатский краб, авокадо, свежие овощи и цитрусовый...</p>
+                            <span class="catalog__item-more">подробнее</span>
+                        </div>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item-inner">
+                            <div class="catalog__controller controller">
+                                <button class="controller__decriment"></button>
+                                <span class="catalog__controller-value"></span>
+                                <button class="controller__incriment"></button>
+                            </div>
+                            <img class="catalog__image" src="./images/shaverma.jpg" alt="">
+                            <div class="catalog__item-heading">
+                                <h3 class="catalog__item-name">Шаверма <span class="catalog__item-weight">250 г</span></h3>
+                                <span class="catalog__item-price">326 &#8381;</span>
+                            </div>
+                        </div>
+                        <div class="catalog__item-discribe">
+                            <p>Камчатский краб, авокадо, свежие овощи и цитрусовый...</p>
+                            <span class="catalog__item-more">подробнее</span>
+                        </div>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item-inner">
+                            <div class="catalog__controller controller">
+                                <button class="controller__decriment"></button>
+                                <span class="catalog__controller-value"></span>
+                                <button class="controller__incriment"></button>
+                            </div>
+                            <img class="catalog__image" src="./images/image25.jpg" alt="">
+                            <div class="catalog__item-heading">
+                                <h3 class="catalog__item-name">Шашлык <span class="catalog__item-weight">250 г</span></h3>
+                                <span class="catalog__item-price">246 &#8381;</span>
+                            </div>
+                        </div>
+                        <div class="catalog__item-discribe">
+                            <p>Камчатский краб, авокадо, свежие овощи и цитрусовый...</p>
+                            <span class="catalog__item-more">подробнее</span>
+                        </div>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item-inner">
+                            <div class="catalog__controller controller">
+                                <button class="controller__decriment"></button>
+                                <span class="catalog__controller-value"></span>
+                                <button class="controller__incriment"></button>
+                            </div>
+                            <img class="catalog__image" src="./images/image26.jpg" alt="">
+                            <div class="catalog__item-heading">
+                                <h3 class="catalog__item-name">Судак <span class="catalog__item-weight">250 г</span></h3>
+                                <span class="catalog__item-price">246 &#8381;</span>
+                            </div>
+                        </div>
+                        <div class="catalog__item-discribe">
+                            <p>Камчатский краб, авокадо, свежие овощи и цитрусовый...</p>
+                            <span class="catalog__item-more">подробнее</span>
+                        </div>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item-inner">
+                            <div class="catalog__controller controller">
+                                <button class="controller__decriment"></button>
+                                <span class="catalog__controller-value"></span>
+                                <button class="controller__incriment"></button>
+                            </div>
+                            <img class="catalog__image" src="./images/image27.jpg" alt="">
+                            <div class="catalog__item-heading">
+                                <h3 class="catalog__item-name">Шаверма <span class="catalog__item-weight">250 г</span></h3>
+                                <span class="catalog__item-price">246 &#8381;</span>
+                            </div>
+                        </div>
+                        <div class="catalog__item-discribe">
+                            <p>Камчатский краб, авокадо, свежие овощи и цитрусовый...</p>
+                            <span class="catalog__item-more">подробнее</span>
+                        </div>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item-inner">
+                            <div class="catalog__controller controller">
+                                <button class="controller__decriment"></button>
+                                <span class="catalog__controller-value"></span>
+                                <button class="controller__incriment"></button>
+                            </div>
+                            <img class="catalog__image" src="./images/manti.jpg" alt="">
+                            <div class="catalog__item-heading">
+                                <h3 class="catalog__item-name">Манты <span class="catalog__item-weight">250 г</span></h3>
+                                <span class="catalog__item-price">246 &#8381;</span>
+                            </div>
+                        </div>
+                        <div class="catalog__item-discribe">
+                            <p>Камчатский краб, авокадо, свежие овощи и цитрусовый...</p>
+                            <span class="catalog__item-more">подробнее</span>
+                        </div>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item-inner">
+                            <div class="catalog__controller controller">
+                                <button class="controller__decriment"></button>
+                                <span class="catalog__controller-value"></span>
+                                <button class="controller__incriment"></button>
+                            </div>
+                            <img class="catalog__image" src="./images/image27.jpg" alt="">
+                            <div class="catalog__item-heading">
+                                <h3 class="catalog__item-name">Шаверма <span class="catalog__item-weight">250 г</span></h3>
+                                <span class="catalog__item-price">246 &#8381;</span>
+                            </div>
+                        </div>
+                        <div class="catalog__item-discribe">
+                            <p>Камчатский краб, авокадо, свежие овощи и цитрусовый...</p>
+                            <span class="catalog__item-more">подробнее</span>
+                        </div>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item-inner">
+                            <div class="catalog__controller controller">
+                                <button class="controller__decriment"></button>
+                                <span class="catalog__controller-value"></span>
+                                <button class="controller__incriment"></button>
+                            </div>
+                            <img class="catalog__image" src="./images/image28.jpg" alt="">
+                            <div class="catalog__item-heading">
+                                <h3 class="catalog__item-name">Бешбармак <span class="catalog__item-weight">250 г</span></h3>
+                                <span class="catalog__item-price">246 &#8381;</span>
+                            </div>
+                        </div>
+                        <div class="catalog__item-discribe">
+                            <p>Камчатский краб, авокадо, свежие овощи и цитрусовый...</p>
+                            <span class="catalog__item-more">подробнее</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog__heading">
+                    <h2 class="catalog__title hot">Горячее</h2>
+                    <select class="select" name="sort">
+                        <option value="">По цене</option>
+                        <option value="">По алфавиту</option>
+                        <option value="">По углеводам</option>
+                        <option value="">По белкам</option>
+                    </select>
+                </div>
+                <div class="catalog__inner">
+                    <div class="catalog__item">
+                        <div class="catalog__item-inner">
+                            <div class="catalog__controller controller">
+                                <button class="controller__decriment"></button>
+                                <span class="controller__value">2</span>
+                                <button class="controller__incriment"></button>
+                            </div>
+                            <img class="catalog__image" src="./images/plov.jpg" alt="">
+                            <div class="catalog__item-heading">
+                                <h3 class="catalog__item-name">Плов Чайханский <span class="catalog__item-weight">250 г</span></h3>
+                                <span class="catalog__item-price">246 &#8381;</span>
+                            </div>
+                        </div>
+                        <div class="catalog__item-discribe">
+                            <p>Камчатский краб, авокадо, свежие овощи и цитрусовый...</p>
+                            <span class="catalog__item-more">подробнее</span>
+                        </div>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item-inner">
+                            <div class="catalog__controller controller">
+                                <button class="controller__decriment"></button>
+                                <span class="catalog__controller-value"></span>
+                                <button class="controller__incriment"></button>
+                            </div>
+                            <img class="catalog__image" src="./images/shaverma.jpg" alt="">
+                            <div class="catalog__item-heading">
+                                <h3 class="catalog__item-name">Шаверма <span class="catalog__item-weight">250 г</span></h3>
+                                <span class="catalog__item-price">326 &#8381;</span>
+                            </div>
+                        </div>
+                        <div class="catalog__item-discribe">
+                            <p>Камчатский краб, авокадо, свежие овощи и цитрусовый...</p>
+                            <span class="catalog__item-more">подробнее</span>
+                        </div>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item-inner">
+                            <div class="catalog__controller controller">
+                                <button class="controller__decriment"></button>
+                                <span class="catalog__controller-value"></span>
+                                <button class="controller__incriment"></button>
+                            </div>
+                            <img class="catalog__image" src="./images/image25.jpg" alt="">
+                            <div class="catalog__item-heading">
+                                <h3 class="catalog__item-name">Шашлык <span class="catalog__item-weight">250 г</span></h3>
+                                <span class="catalog__item-price">246 &#8381;</span>
+                            </div>
+                        </div>
+                        <div class="catalog__item-discribe">
+                            <p>Камчатский краб, авокадо, свежие овощи и цитрусовый...</p>
+                            <span class="catalog__item-more">подробнее</span>
+                        </div>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item-inner">
+                            <div class="catalog__controller controller">
+                                <button class="controller__decriment"></button>
+                                <span class="catalog__controller-value"></span>
+                                <button class="controller__incriment"></button>
+                            </div>
+                            <img class="catalog__image" src="./images/image26.jpg" alt="">
+                            <div class="catalog__item-heading">
+                                <h3 class="catalog__item-name">Судак <span class="catalog__item-weight">250 г</span></h3>
+                                <span class="catalog__item-price">246 &#8381;</span>
+                            </div>
+                        </div>
+                        <div class="catalog__item-discribe">
+                            <p>Камчатский краб, авокадо, свежие овощи и цитрусовый...</p>
+                            <span class="catalog__item-more">подробнее</span>
+                        </div>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item-inner">
+                            <div class="catalog__controller controller">
+                                <button class="controller__decriment"></button>
+                                <span class="catalog__controller-value"></span>
+                                <button class="controller__incriment"></button>
+                            </div>
+                            <img class="catalog__image" src="./images/image27.jpg" alt="">
+                            <div class="catalog__item-heading">
+                                <h3 class="catalog__item-name">Шаверма <span class="catalog__item-weight">250 г</span></h3>
+                                <span class="catalog__item-price">246 &#8381;</span>
+                            </div>
+                        </div>
+                        <div class="catalog__item-discribe">
+                            <p>Камчатский краб, авокадо, свежие овощи и цитрусовый...</p>
+                            <span class="catalog__item-more">подробнее</span>
+                        </div>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item-inner">
+                            <div class="catalog__controller controller">
+                                <button class="controller__decriment"></button>
+                                <span class="catalog__controller-value"></span>
+                                <button class="controller__incriment"></button>
+                            </div>
+                            <img class="catalog__image" src="./images/manti.jpg" alt="">
+                            <div class="catalog__item-heading">
+                                <h3 class="catalog__item-name">Манты <span class="catalog__item-weight">250 г</span></h3>
+                                <span class="catalog__item-price">246 &#8381;</span>
+                            </div>
+                        </div>
+                        <div class="catalog__item-discribe">
+                            <p>Камчатский краб, авокадо, свежие овощи и цитрусовый...</p>
+                            <span class="catalog__item-more">подробнее</span>
+                        </div>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item-inner">
+                            <div class="catalog__controller controller">
+                                <button class="controller__decriment"></button>
+                                <span class="catalog__controller-value"></span>
+                                <button class="controller__incriment"></button>
+                            </div>
+                            <img class="catalog__image" src="./images/image27.jpg" alt="">
+                            <div class="catalog__item-heading">
+                                <h3 class="catalog__item-name">Шаверма <span class="catalog__item-weight">250 г</span></h3>
+                                <span class="catalog__item-price">246 &#8381;</span>
+                            </div>
+                        </div>
+                        <div class="catalog__item-discribe">
+                            <p>Камчатский краб, авокадо, свежие овощи и цитрусовый...</p>
+                            <span class="catalog__item-more">подробнее</span>
+                        </div>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item-inner">
+                            <div class="catalog__controller controller">
+                                <button class="controller__decriment"></button>
+                                <span class="catalog__controller-value"></span>
+                                <button class="controller__incriment"></button>
+                            </div>
+                            <img class="catalog__image" src="./images/image28.jpg" alt="">
+                            <div class="catalog__item-heading">
+                                <h3 class="catalog__item-name">Бешбармак <span class="catalog__item-weight">250 г</span></h3>
+                                <span class="catalog__item-price">246 &#8381;</span>
+                            </div>
+                        </div>
+                        <div class="catalog__item-discribe">
+                            <p>Камчатский краб, авокадо, свежие овощи и цитрусовый...</p>
+                            <span class="catalog__item-more">подробнее</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <aside class="order">
+            <div class="order__title-wrapper">
+                <span class="order__title">Мой заказ</span>
+                <span class="order__number">4</span>
+            </div>
+            <svg class="svg svg__empty order__svg">
+                <use xlink:href="./images/sprite/sprite.svg#icon-empty"></use>
+            </svg>
+            <p class="order__text">Пока пусто ;)</p>
+        </aside>
+    </main>
+    <div class="filter-btn">
+        <svg class="svg svg__filter-btn">
+            <use xlink:href="./images/sprite/sprite.svg#icon-menu"></use>
+        </svg>
+    </div>
+    <div class="popup">
+        <div class="popup__close">
+            <svg class="svg svg__popup-close">
+                <use xlink:href="./images/sprite/sprite.svg#icon-close"></use>
+            </svg>
+        </div>
+        <div class="popup__picture-wrapper">
+            <img class="popup__image" src="./images/stake_desktop.jpg" alt="">
+        </div>
+        <div class="popup__about">
+            <div class="popup__inner">
+                <div class="popup__heading">
+                    <h2>Стейк из говядины</h2>
+                    <span class="popup__weight">250 г</span>
+                </div>
+                <div class="popup__content">
+                    <h4 class="popup__h4 popup__describe">Описание</h4>
+                    <p class="popup__describe-text">Стейк из поясничной части мраморной говядины. Рекомендуемая степень прожарки medium</p>
+                    <h4 class="popup__h4 popup__mixture">Состав</h4>
+                    <p class="popup__mixture-text">Микс салатов, лосось, соус терияки, соус Унаги</p>
+                </div>
+                <h4 class="popup__h4 popup__bju-title">Пищевая ценность</h4>
+                <div class="popup__bju">
+                    <div class="popup__bju-item">
+                        <span class="popup__bju-value">650</span>
+                        <span class="popup__bju-name">ккал</span>
+                    </div>
+                    <div class="popup__bju-item">
+                        <span class="popup__bju-value">34</span>
+                        <span class="popup__bju-name">белки</span>
+                    </div>
+                    <div class="popup__bju-item">
+                        <span class="popup__bju-value">60</span>
+                        <span class="popup__bju-name">жиры</span>
+                    </div>
+                    <div class="popup__bju-item">
+                        <span class="popup__bju-value">12</span>
+                        <span class="popup__bju-name">углеводы</span>
+                    </div>
+                </div>
+            </div>
+            <div class="popup__footer">
+                <div class="popup__controller">
+                    <button class="popup__btn-decriment"></button>
+                    <span class="popup__value">2</span>
+                    <button class="popup__btn-incriment"></button>
+                </div>
+                <div class="popup__link-wrapper">
+                    <a class="popup__ready-link" href="#">готово</a>
+                    <span class="popup__price">246 &#8381;</span>   
+                    <a class="popup__add" href="#">Добавить</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="backdoor"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/main.min.js"></script>
+</body>
+</html>
